@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /*background: linear-gradient(0deg, rgba(2,64,89,1) 0%, rgba(2,104,115,1) 100%);*/
+    background-color: #F4E2DE;
+    font-family: 'Merriweather Sans';
+}

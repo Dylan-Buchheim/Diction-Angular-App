@@ -1,0 +1,5 @@
+<div class="game-container">
+    <app-guess-container [word]="topWord" [secretWord]="secretWord"></app-guess-container>
+    <app-word-container *ngIf="secretWord" (wordGuessed)="onWordGuessed($event)"></app-word-container>
+    <app-guess-container [word]="bottomWord" [secretWord]="secretWord"></app-guess-container>
+</div>

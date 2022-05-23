@@ -1,0 +1,46 @@
+.title-bar {
+    width: 100%;
+    height: 150px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 4rem;
+    font-family: 'Merriweather Sans', 'Segoe';
+    position: relative;
+    width: fit-content;
+    color: #025259;
+}
+
+.title::after {
+    content: '';
+    background-color: #D94F04;
+    width: 10ch;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform-origin: left;
+    animation: 0.5s ease-out 0s 1 grow
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0%);
+    }
+    100% {
+        transform: scaleX(100%);
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    color: #025259;
+}

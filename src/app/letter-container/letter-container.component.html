@@ -1,0 +1,7 @@
+<div    class="letter-container"
+        [ngClass]="{'wrong' : letter.status === 'wrong',
+                    'partial' : letter.status === 'partial',
+                    'correct' : letter.status === 'correct'}"
+>
+    {{letter.value | uppercase}}
+</div>
